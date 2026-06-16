@@ -33,7 +33,7 @@ body{
 
 .streetkeepersHeader{
   position:absolute;
-  top:115px;
+  top:135px;
   left:120px;
 
   font-family:"Cinzel", serif;
@@ -49,7 +49,7 @@ body{
 
 .exploreAppItem{
   position:absolute;
-  top:185px;
+  top:2155px;
   left:120px;
 
   font-family:Georgia, serif;
@@ -161,7 +161,7 @@ body{
 
 .churchesHeader{
   position:absolute;
-  top:115px;
+  top:135px;
   right:120px;
 
   font-family:"Cinzel", serif;
@@ -177,7 +177,7 @@ body{
 
 .churchOverviewItem{
   position:absolute;
-  top:185px;
+  top:2155px;
   right:120px;
 
   font-family:Georgia, serif;
