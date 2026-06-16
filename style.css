@@ -253,7 +253,280 @@ body{
   font-family:Georgia, serif;
   font-size:22px;
   font-weight:400;
+  color:#1f6f8b;*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html,
+body{
+  width:100%;
+  height:100%;
+}
+
+body{
+  overflow-x:hidden;
+  font-family:Georgia, serif;
+  background:#ffffff;
+}
+
+.homePage{
+  position:relative;
+  width:100vw;
+  height:100vh;
+
+  background-image:url("JOINPRAYERCOVER-HOME-PAGE.png");
+  background-position:center 22px;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+/* ======================================
+   STREETKEEPERS HEADER
+====================================== */
+
+.streetkeepersHeader{
+  position:absolute;
+  top:115px;
+  left:120px;
+
+  font-family:"Cinzel", serif;
+  font-size:36px;
+  font-weight:700;
   color:#1f6f8b;
+  text-align:left;
+}
+
+/* ======================================
+   STREETKEEPER ITEMS
+====================================== */
+
+.exploreAppItem{
+  position:absolute;
+  top:180px;
+  left:120px;
+
+  font-family:Georgia, serif;
+  font-size:26px;
+  font-weight:700;
+  color:#1f6f8b;
+  line-height:1.25;
+  cursor:pointer;
+}
+
+.acrossCitiesItem{
+  position:absolute;
+  top:228px;
+  left:120px;
+
+  font-family:Georgia, serif;
+  font-size:26px;
+  font-weight:700;
+  color:#1f6f8b;
+  line-height:1.25;
+  cursor:pointer;
+}
+
+.becomeStreetkeeperItem{
+  position:absolute;
+  top:276px;
+  left:120px;
+
+  font-family:Georgia, serif;
+  font-size:26px;
+  font-weight:700;
+  color:#1f6f8b;
+  line-height:1.15;
+  cursor:pointer;
+}
+
+.howMapWorksItem{
+  position:absolute;
+  top:360px;
+  left:120px;
+
+  font-family:Georgia, serif;
+  font-size:26px;
+  font-weight:400;
+  color:#1f6f8b;
+  line-height:1.25;
+  cursor:pointer;
+}
+
+.videoLibraryItem{
+  position:absolute;
+  top:408px;
+  left:120px;
+
+  font-family:Georgia, serif;
+  font-size:26px;
+  font-weight:400;
+  color:#1f6f8b;
+  line-height:1.25;
+  cursor:pointer;
+}
+
+.streetkeeperGearItem{
+  position:absolute;
+  top:456px;
+  left:120px;
+
+  font-family:Georgia, serif;
+  font-size:26px;
+  font-weight:400;
+  color:#1f6f8b;
+  line-height:1.25;
+  cursor:pointer;
+}
+
+.streetkeeperLoginItem{
+  position:absolute;
+  top:540px;
+  left:120px;
+
+  font-family:Georgia, serif;
+  font-size:26px;
+  font-weight:400;
+  color:#1f6f8b;
+  line-height:1.25;
+  cursor:pointer;
+}
+
+/* ======================================
+   ABOUT PRAYER COVER HEADER
+====================================== */
+
+.aboutPrayerCoverHeader{
+  position:absolute;
+  top:625px;
+  left:50%;
+  transform:translateX(-50%);
+
+  font-family:"Cinzel", serif;
+  font-size:36px;
+  font-weight:700;
+  color:#1f6f8b;
+  text-align:center;
+}
+
+/* ======================================
+   CHURCHES HEADER
+====================================== */
+
+.churchesHeader{
+  position:absolute;
+  top:115px;
+  right:120px;
+
+  font-family:"Cinzel", serif;
+  font-size:36px;
+  font-weight:700;
+  color:#1f6f8b;
+  text-align:right;
+}
+
+/* ======================================
+   CHURCH ITEMS
+====================================== */
+
+.churchOverviewItem{
+  position:absolute;
+  top:180px;
+  right:120px;
+
+  font-family:Georgia, serif;
+  font-size:26px;
+  font-weight:400;
+  color:#1f6f8b;
+  line-height:1.25;
+  text-align:right;
+  cursor:pointer;
+}
+
+.pastorsKitItem{
+  position:absolute;
+  top:228px;
+  right:120px;
+
+  font-family:Georgia, serif;
+  font-size:26px;
+  font-weight:700;
+  color:#1f6f8b;
+  line-height:1.25;
+  text-align:right;
+  cursor:pointer;
+}
+
+.pricingItem{
+  position:absolute;
+  top:276px;
+  right:120px;
+
+  font-family:Georgia, serif;
+  font-size:26px;
+  font-weight:400;
+  color:#1f6f8b;
+  line-height:1.25;
+  text-align:right;
+  cursor:pointer;
+}
+
+.howItWorksItem{
+  position:absolute;
+  top:324px;
+  right:120px;
+
+  font-family:Georgia, serif;
+  font-size:26px;
+  font-weight:400;
+  color:#1f6f8b;
+  line-height:1.25;
+  text-align:right;
+  cursor:pointer;
+}
+
+.churchSignupItem{
+  position:absolute;
+  top:372px;
+  right:120px;
+
+  font-family:Georgia, serif;
+  font-size:26px;
+  font-weight:700;
+  color:#1f6f8b;
+  line-height:1.25;
+  text-align:right;
+  cursor:pointer;
+}
+
+.shareVisionItem{
+  position:absolute;
+  top:420px;
+  right:120px;
+
+  font-family:Georgia, serif;
+  font-size:26px;
+  font-weight:400;
+  color:#1f6f8b;
+  line-height:1.25;
+  text-align:right;
+  cursor:pointer;
+}
+
+.leadershipLoginItem{
+  position:absolute;
+  top:540px;
+  right:120px;
+
+  font-family:Georgia, serif;
+  font-size:26px;
+  font-weight:400;
+  color:#1f6f8b;
+  line-height:1.25;
+  text-align:right;
+  cursor:pointer;
+}
   line-height:1.25;
   text-align:right;
   cursor:pointer;
