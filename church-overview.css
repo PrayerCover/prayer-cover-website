@@ -16,9 +16,11 @@ body{
 }
 
 .churchOverviewPage{
+
   position:relative;
 
   width:100vw;
+
   min-height:3200px;
 
   background-image:
