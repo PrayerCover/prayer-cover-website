@@ -20,10 +20,10 @@ body{
   position:relative;
 
   width:100vw;
-  min-height:100vh;
+  min-height:3200px;
 
   background-image:
-    url("JOINPRAYERCOVER-ABOUT-PRAYER-COVER.png");
+    url("JOINPRAYERCOVER-ABOUT-PRAYER-COVER-PAGE.png");
 
   background-position:
     top center;
@@ -63,7 +63,7 @@ body{
 
   position:absolute;
 
-  top:120px;
+  top:120px
   left:50%;
 
   transform:
