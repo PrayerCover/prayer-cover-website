@@ -74,7 +74,7 @@ body{
     "Cinzel",
     serif;
 
-  font-size:46px;
+  font-size:56px;
 
   font-weight:700;
 
@@ -216,4 +216,15 @@ body{
   color:#FFFFFF;
 
   text-align:center;
+}
+
+.howWeStartedText .emphasisLine{
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.howWeStartedText .closingLine{
+  font-weight:700;
+  margin-top:34px;
+  margin-bottom:18px;
 }
