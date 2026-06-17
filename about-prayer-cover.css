@@ -1,0 +1,192 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html,
+body{
+  width:100%;
+  min-height:100%;
+}
+
+body{
+  background:#07194f;
+  font-family:Georgia, serif;
+}
+
+.aboutPage{
+
+  position:relative;
+
+  width:100vw;
+  min-height:100vh;
+
+  background-image:
+    url("JOINPRAYERCOVER-ABOUT-PRAYER-COVER.png");
+
+  background-position:
+    top center;
+
+  background-repeat:
+    no-repeat;
+
+  background-size:
+    100% auto;
+}
+
+/* ======================================
+   BACK TO HOME
+====================================== */
+
+.backHomeLink{
+
+  position:absolute;
+
+  top:40px;
+  left:50px;
+
+  font-family:Georgia, serif;
+
+  font-size:24px;
+
+  color:#FFFFFF;
+
+  text-decoration:none;
+}
+
+/* ======================================
+   PAGE TITLE
+====================================== */
+
+.aboutPageTitle{
+
+  position:absolute;
+
+  top:120px;
+  left:50%;
+
+  transform:
+    translateX(-50%);
+
+  font-family:
+    "Cinzel",
+    serif;
+
+  font-size:48px;
+
+  font-weight:700;
+
+  color:#FFFFFF;
+
+  text-align:center;
+}
+
+/* ======================================
+   WHAT IS PRAYER COVER
+====================================== */
+
+.whatIsPrayerCoverHeading{
+
+  position:absolute;
+
+  top:420px;
+  left:50%;
+
+  transform:
+    translateX(-50%);
+
+  font-family:
+    "Cinzel",
+    serif;
+
+  font-size:48px;
+
+  font-weight:700;
+
+  color:#FFFFFF;
+
+  text-align:center;
+}
+
+.whatIsPrayerCoverText{
+
+  position:absolute;
+
+  top:520px;
+  left:50%;
+
+  transform:
+    translateX(-50%);
+
+  width:720px;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:24px;
+
+  line-height:1.6;
+
+  color:#FFFFFF;
+}
+
+.whatIsPrayerCoverText p{
+  margin-bottom:20px;
+}
+
+/* ======================================
+   HOW WE STARTED
+====================================== */
+
+.howWeStartedHeading{
+
+  position:absolute;
+
+  top:1500px;
+  left:50%;
+
+  transform:
+    translateX(-50%);
+
+  font-family:
+    "Cinzel",
+    serif;
+
+  font-size:48px;
+
+  font-weight:700;
+
+  color:#FFFFFF;
+
+  text-align:center;
+}
+
+.howWeStartedText{
+
+  position:absolute;
+
+  top:1600px;
+  left:50%;
+
+  transform:
+    translateX(-50%);
+
+  width:720px;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:24px;
+
+  line-height:1.6;
+
+  color:#FFFFFF;
+}
+
+.howWeStartedText p{
+  margin-bottom:20px;
+}
+
