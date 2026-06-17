@@ -43,10 +43,12 @@ body{
 
   position:absolute;
 
-  top:40px;
-  left:50px;
+  top:42px;
+  right:58px;
 
-  font-family:Georgia, serif;
+  font-family:
+    Georgia,
+    serif;
 
   font-size:24px;
 
@@ -63,17 +65,16 @@ body{
 
   position:absolute;
 
-  top:120px
-  left:50%;
+  top:70px;
+  left:0;
 
-  transform:
-    translateX(-50%);
+  width:100%;
 
   font-family:
     "Cinzel",
     serif;
 
-  font-size:48px;
+  font-size:46px;
 
   font-weight:700;
 
@@ -90,17 +91,16 @@ body{
 
   position:absolute;
 
-  top:420px;
-  left:50%;
+  top:245px;
+  left:0;
 
-  transform:
-    translateX(-50%);
+  width:100%;
 
   font-family:
     "Cinzel",
     serif;
 
-  font-size:48px;
+  font-size:44px;
 
   font-weight:700;
 
@@ -113,27 +113,29 @@ body{
 
   position:absolute;
 
-  top:520px;
+  top:335px;
   left:50%;
 
   transform:
     translateX(-50%);
 
-  width:720px;
+  width:620px;
 
   font-family:
     Georgia,
     serif;
 
-  font-size:24px;
+  font-size:18px;
 
-  line-height:1.6;
+  line-height:1.42;
 
   color:#FFFFFF;
+
+  text-align:center;
 }
 
 .whatIsPrayerCoverText p{
-  margin-bottom:20px;
+  margin-bottom:13px;
 }
 
 /* ======================================
@@ -144,17 +146,16 @@ body{
 
   position:absolute;
 
-  top:2200px;
-  left:50%;
+  top:1340px;
+  left:0;
 
-  transform:
-    translateX(-50%);
+  width:100%;
 
   font-family:
     "Cinzel",
     serif;
 
-  font-size:48px;
+  font-size:42px;
 
   font-weight:700;
 
@@ -167,26 +168,31 @@ body{
 
   position:absolute;
 
-  top:2300px;
+  top:1425px;
   left:50%;
 
   transform:
     translateX(-50%);
 
-  width:720px;
+  width:620px;
 
   font-family:
     Georgia,
     serif;
 
-  font-size:24px;
+  font-size:17px;
 
-  line-height:1.6;
+  line-height:1.34;
 
   color:#FFFFFF;
+
+  text-align:center;
 }
 
 .howWeStartedText p{
-  margin-bottom:20px;
+  margin-bottom:11px;
 }
 
+.howWeStartedText h3{
+  display:none;
+}
