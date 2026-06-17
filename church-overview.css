@@ -54,3 +54,51 @@ body{
 
   text-decoration:none;
 }
+
+
+/* ======================================
+   CONTENT SECTIONS
+====================================== */
+
+.churchOverviewSection{
+
+  width:680px;
+
+  margin:0 auto;
+
+  text-align:center;
+
+  color:#175A6C;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:24px;
+
+  line-height:1.55;
+}
+
+.churchOverviewSection h2{
+
+  font-family:
+    "Cinzel",
+    serif;
+
+  font-size:34px;
+
+  font-weight:700;
+
+  color:#175A6C;
+
+  text-align:center;
+
+  margin-bottom:28px;
+
+  margin-top:120px;
+}
+
+.churchOverviewSection p{
+
+  margin-bottom:24px;
+}
