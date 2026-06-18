@@ -62,7 +62,7 @@ body{
 
 .acrossCitiesItem{
   position:absolute;
-  top:245px;
+  top:275px;
   left:120px;
 
   font-family:Georgia, serif;
@@ -75,7 +75,7 @@ body{
 
 .becomeStreetkeeperItem{
   position:absolute;
-  top:305px;
+  top:345px;
   left:120px;
 
   font-family:Georgia, serif;
@@ -89,7 +89,7 @@ body{
 .howMapWorksItem{
 
   position:absolute;
-  top:415px;
+  top:455px;
   left:120px;
 
   font-family:Georgia, serif;
@@ -105,7 +105,7 @@ body{
 
 .videoLibraryItem{
   position:absolute;
-  top:475px;
+  top:515px;
   left:120px;
 
   font-family:Georgia, serif;
@@ -118,7 +118,7 @@ body{
 
 .streetkeeperGearItem{
   position:absolute;
-  top:535px;
+  top:575px;
   left:120px;
 
   font-family:Georgia, serif;
@@ -131,7 +131,7 @@ body{
 
 .streetkeeperLoginItem{
   position:absolute;
-  top:660px;
+  top:780px;
   left:120px;
 
   font-family:Georgia, serif;
@@ -182,7 +182,7 @@ body{
 
   font-family:"Cinzel", serif;
 
-  font-size:28px;
+  font-size:36px;
 
   font-weight:700;
 
@@ -230,7 +230,7 @@ body{
 
 .pastorsKitItem{
   position:absolute;
-  top:245px;
+  top:285px;
   right:120px;
 
   font-family:Georgia, serif;
@@ -244,7 +244,7 @@ body{
 
 .pricingItem{
   position:absolute;
-  top:305px;
+  top:345px;
   right:120px;
 
   font-family:Georgia, serif;
