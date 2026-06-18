@@ -131,7 +131,7 @@ body{
 
 .streetkeeperLoginItem{
   position:absolute;
-  top:780px;
+  top:660px;
   left:120px;
 
   font-family:Georgia, serif;
@@ -151,7 +151,7 @@ body{
 
   position:absolute;
 
-  top:735px;
+  top:715px;
 
   left:50%;
 
@@ -174,7 +174,7 @@ body{
 
   position:absolute;
 
-  top:805px;
+  top:795px;
 
   left:50%;
 
@@ -182,7 +182,7 @@ body{
 
   font-family:"Cinzel", serif;
 
-  font-size:36px;
+  font-size:38px;
 
   font-weight:700;
 
