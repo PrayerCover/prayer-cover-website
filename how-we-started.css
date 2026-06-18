@@ -1,0 +1,39 @@
+.howWeStartedPage{
+
+  position:relative;
+
+  width:100vw;
+
+  min-height:3200px;
+
+  background-image:
+    url("JOINPRAYERCOVER-HOW-WE-STARTED.png");
+
+  background-position:
+    top center;
+
+  background-repeat:
+    no-repeat;
+
+  background-size:
+    100% 3200px;
+}
+
+.backHomeLink{
+
+  position:absolute;
+
+  top:42px;
+
+  right:58px;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:24px;
+
+  color:#FFFFFF;
+
+  text-decoration:none;
+}
