@@ -139,20 +139,54 @@ body{
 }
 
 /* ======================================
-   ABOUT PRAYER COVER HEADER
+   ABOUT PRAYER COVER HEADER and
+   HOW WE STARTED HEADER
 ====================================== */
 
 .aboutPrayerCoverHeader{
+
   position:absolute;
-  top:760px;
+
+  top:735px;
+
   left:50%;
+
   transform:translateX(-50%);
 
   font-family:"Cinzel", serif;
+
   font-size:42px;
+
   font-weight:700;
+
   color:#1f6f8b;
+
   text-align:center;
+
+  text-decoration:none;
+}
+
+.howWeStartedHeader{
+
+  position:absolute;
+
+  top:805px;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  font-family:"Cinzel", serif;
+
+  font-size:28px;
+
+  font-weight:700;
+
+  color:#1f6f8b;
+
+  text-align:center;
+
+  text-decoration:none;
 }
 
 /* ======================================
