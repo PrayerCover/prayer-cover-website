@@ -311,3 +311,165 @@ body{
   text-align:right;
   cursor:pointer;
 }
+
+/* ======================================
+   MOBILE LAYOUT
+====================================== */
+
+@media (max-width:700px){
+
+  .homePage{
+    width:100%;
+    min-height:100vh;
+    height:auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    background-image:url("JOINPRAYERCOVER-HOME-PAGE.png");
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-size:100% auto;
+
+    padding-top:78vw;
+    padding-left:22px;
+    padding-right:22px;
+    padding-bottom:60px;
+  }
+
+  .streetkeepersHeader,
+  .exploreAppItem,
+  .acrossCitiesItem,
+  .becomeStreetkeeperItem,
+  .howMapWorksItem,
+  .videoLibraryItem,
+  .streetkeeperGearItem,
+  .streetkeeperLoginItem,
+  .aboutPrayerCoverHeader,
+  .howWeStartedHeader,
+  .churchesHeader,
+  .churchOverviewItem,
+  .pastorsKitItem,
+  .pricingItem,
+  .churchSignupItem,
+  .shareVisionItem,
+  .leadershipLoginItem{
+    position:relative;
+    top:auto;
+    left:auto;
+    right:auto;
+    transform:none;
+
+    width:100%;
+    text-align:center;
+
+    color:#1f6f8b;
+  }
+
+  .aboutPrayerCoverHeader{
+    order:1;
+    margin-top:0;
+    margin-bottom:34px;
+
+    font-size:30px;
+    line-height:1.2;
+  }
+
+  .streetkeepersHeader{
+    order:2;
+    margin-top:0;
+    margin-bottom:20px;
+
+    font-size:30px;
+    line-height:1.2;
+  }
+
+  .exploreAppItem{
+    order:3;
+  }
+
+  .acrossCitiesItem{
+    order:4;
+  }
+
+  .becomeStreetkeeperItem{
+    order:5;
+  }
+
+  .howMapWorksItem{
+    order:6;
+  }
+
+  .videoLibraryItem{
+    order:7;
+  }
+
+  .streetkeeperGearItem{
+    order:8;
+  }
+
+  .streetkeeperLoginItem{
+    order:9;
+    margin-bottom:42px;
+  }
+
+  .churchesHeader{
+    order:10;
+    margin-bottom:20px;
+
+    font-size:30px;
+    line-height:1.2;
+  }
+
+  .churchOverviewItem{
+    order:11;
+  }
+
+  .pastorsKitItem{
+    order:12;
+  }
+
+  .pricingItem{
+    order:13;
+  }
+
+  .churchSignupItem{
+    order:14;
+  }
+
+  .shareVisionItem{
+    order:15;
+  }
+
+  .leadershipLoginItem{
+    order:16;
+    margin-bottom:42px;
+  }
+
+  .howWeStartedHeader{
+    order:17;
+
+    font-size:28px;
+    line-height:1.2;
+  }
+
+  .exploreAppItem,
+  .acrossCitiesItem,
+  .becomeStreetkeeperItem,
+  .howMapWorksItem,
+  .videoLibraryItem,
+  .streetkeeperGearItem,
+  .streetkeeperLoginItem,
+  .churchOverviewItem,
+  .pastorsKitItem,
+  .pricingItem,
+  .churchSignupItem,
+  .shareVisionItem,
+  .leadershipLoginItem{
+    margin-bottom:16px;
+
+    font-size:26px;
+    line-height:1.18;
+  }
+}
