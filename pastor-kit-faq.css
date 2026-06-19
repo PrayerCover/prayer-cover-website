@@ -2,6 +2,7 @@ body{
 margin:0;
 padding:0;
 background:#ffffff;
+overflow-x:hidden;
 }
 
 .pastorFaqPage{
@@ -10,20 +11,18 @@ width:100%;
 }
 
 .pastorFaqBackHomeLink{
-position:relative;
-display:block;
-margin:20px 0 15px 25px;
-
-
-z-index:10;
+position:absolute;
+top:30px;
+right:35px;
+z-index:20;
 
 font-family:"Cinzel", serif;
-font-size:24px;
+font-size:22px;
 font-weight:600;
 
-color:#1f6f8b;
-
+color:#ffffff;
 text-decoration:none;
+text-shadow:0 2px 4px rgba(0,0,0,0.45);
 }
 
 .pastorFaqBackHomeLink:hover{
