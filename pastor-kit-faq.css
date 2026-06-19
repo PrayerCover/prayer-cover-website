@@ -10,9 +10,10 @@ width:100%;
 }
 
 .pastorFaqBackHomeLink{
-position:absolute;
-top:40px;
-left:50px;
+position:relative;
+display:block;
+margin:20px 0 15px 25px;
+
 
 z-index:10;
 
