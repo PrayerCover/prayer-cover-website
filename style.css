@@ -377,78 +377,83 @@ body{
   }
 
   .streetkeepersHeader{
-    order:2;
+    order:3;
     margin-top:0;
-    margin-bottom:20px;
+    margin-bottom:12px;
 
-    font-size:30px;
+    font-family:Georgia, serif;
+    font-size:22px;
+    font-weight:700;
     line-height:1.2;
   }
 
   .exploreAppItem{
-    order:3;
-  }
-
-  .acrossCitiesItem{
     order:4;
   }
 
-  .becomeStreetkeeperItem{
+  .acrossCitiesItem{
     order:5;
   }
 
-  .howMapWorksItem{
+  .becomeStreetkeeperItem{
     order:6;
   }
 
-  .videoLibraryItem{
+  .howMapWorksItem{
     order:7;
   }
 
-  .streetkeeperGearItem{
+  .videoLibraryItem{
     order:8;
   }
 
-  .streetkeeperLoginItem{
+  .streetkeeperGearItem{
     order:9;
+  }
+
+  .streetkeeperLoginItem{
+    order:10;
     margin-bottom:42px;
   }
 
   .churchesHeader{
-    order:10;
-    margin-bottom:20px;
+    order:11;
+    margin-bottom:12px;
 
-    font-size:30px;
+    font-family:Georgia, serif;
+    font-size:22px;
+    font-weight:700;
     line-height:1.2;
   }
 
   .churchOverviewItem{
-    order:11;
-  }
-
-  .pastorsKitItem{
     order:12;
   }
 
-  .pricingItem{
+  .pastorsKitItem{
     order:13;
   }
 
-  .churchSignupItem{
+  .pricingItem{
     order:14;
   }
 
-  .shareVisionItem{
+  .churchSignupItem{
     order:15;
   }
 
-  .leadershipLoginItem{
+  .shareVisionItem{
     order:16;
+  }
+
+  .leadershipLoginItem{
+    order:17;
     margin-bottom:42px;
   }
 
   .howWeStartedHeader{
-    order:17;
+    order:2;
+    margin-bottom:38px;
 
     font-size:28px;
     line-height:1.2;
