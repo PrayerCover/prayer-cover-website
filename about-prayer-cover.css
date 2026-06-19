@@ -64,11 +64,11 @@ body{
 @media (max-width:700px){
 
   .aboutPrayerCoverBackHomeLink{
-    top:18px;
-    left:18px;
+    top:12px;
+    left:10px;
     right:auto;
 
-    font-size:18px;
+    font-size:12px;
     z-index:20;
   }
 
