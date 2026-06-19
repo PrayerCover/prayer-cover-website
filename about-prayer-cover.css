@@ -39,7 +39,7 @@ body{
    BACK TO HOME
 ====================================== */
 
-.backHomeLink{
+.aboutPrayerCoverBackHomeLink{
 
   position:absolute;
 
@@ -55,6 +55,23 @@ body{
   color:#FFFFFF;
 
   text-decoration:none;
+}
+
+/* ======================================
+   MOBILE LAYOUT
+====================================== */
+
+@media (max-width:700px){
+
+  .aboutPrayerCoverBackHomeLink{
+    top:18px;
+    left:18px;
+    right:auto;
+
+    font-size:18px;
+    z-index:20;
+  }
+
 }
 
 /* ======================================
