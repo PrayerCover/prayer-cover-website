@@ -1,0 +1,35 @@
+body{
+  margin:0;
+  padding:0;
+  background:#ffffff;
+}
+
+.faqPage{
+  position:relative;
+  width:100%;
+}
+
+.backHomeLink{
+  position:absolute;
+  top:40px;
+  left:50px;
+
+  z-index:10;
+
+  font-family:"Cinzel", serif;
+  font-size:24px;
+  font-weight:600;
+
+  color:#1f6f8b;
+  text-decoration:none;
+}
+
+.backHomeLink:hover{
+  text-decoration:underline;
+}
+
+.faqImage{
+  display:block;
+  width:100%;
+  height:auto;
+}
