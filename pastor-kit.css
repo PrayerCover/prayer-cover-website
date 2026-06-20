@@ -25,7 +25,7 @@ background-size:
 
 .pastorKitBackHomeLink{
 position:absolute;
-top:20px;
+top:24px;
 right:64px;
 z-index:20;
 
@@ -47,7 +47,7 @@ text-shadow:
 
 .pastorKitTiles{
 position:absolute;
-top:1380px;
+top:1500px;
 left:50%;
 transform:translateX(-50%);
 
