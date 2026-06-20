@@ -68,7 +68,7 @@ justify-content:center;
 height:74px;
 
 font-family:"Cinzel", serif;
-font-size:26px;
+font-size:38px;
 font-weight:600;
 
 color:#ffffff;
@@ -152,8 +152,6 @@ border-radius:12px;
    .pastorKitPreviewText{
       display:none;
    }
-
-}
 
   .pastorKitPage{
     min-height:240vw;
