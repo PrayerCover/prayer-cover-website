@@ -47,7 +47,7 @@ text-shadow:
 
 .pastorKitTiles{
 position:absolute;
-top:760px;
+top:980px;
 left:50%;
 transform:translateX(-50%);
 
@@ -153,7 +153,7 @@ border-radius:12px;
   }
 
 .pastorKitTiles{
-    top:64vw;
+    top:82vw;
     width:78vw;
     gap:16px;
   }
