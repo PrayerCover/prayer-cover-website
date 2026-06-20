@@ -34,3 +34,21 @@ display:block;
 width:100%;
 height:auto;
 }
+
+/* ======================================
+   MOBILE LAYOUT
+====================================== */
+
+@media (max-width:700px){
+
+  .pastorFaqBackHomeLink{
+    top:12px;
+    left:12px;
+    right:auto;
+
+    font-size:12px;
+
+    z-index:20;
+  }
+
+}
