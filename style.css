@@ -350,7 +350,7 @@ body{
   .howWeStartedHeader,
   .churchesHeader,
   .churchOverviewItem,
-  .pastorsKitItem,
+  .pastorKitItem,
   .pricingItem,
   .churchSignupItem,
   .shareVisionItem,
@@ -430,7 +430,7 @@ body{
     order:12;
   }
 
-  .pastorsKitItem{
+  .pastorKitItem{
     order:13;
   }
 
@@ -467,7 +467,7 @@ body{
   .streetkeeperGearItem,
   .streetkeeperLoginItem,
   .churchOverviewItem,
-  .pastorsKitItem,
+  .pastorKitItem,
   .pricingItem,
   .churchSignupItem,
   .shareVisionItem,
