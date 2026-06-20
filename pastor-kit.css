@@ -53,7 +53,7 @@ width:800px;
 
 display:flex;
 flex-direction:column;
-gap:24px;
+gap:12px;
 
 z-index:10;
 }
@@ -127,7 +127,7 @@ border-radius:12px;
   width:760px;
 
   margin-top:10px;
-  margin-bottom:30px;
+  margin-bottom:10px;
   margin-left:70px;
 
   font-family:Georgia, serif;
