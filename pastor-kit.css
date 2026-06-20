@@ -42,6 +42,47 @@ text-shadow:
 }
 
 /* ======================================
+   PASTOR KIT TILES
+====================================== */
+
+.pastorKitTiles{
+position:absolute;
+top:760px;
+left:50%;
+transform:translateX(-50%);
+
+width:520px;
+
+display:flex;
+flex-direction:column;
+gap:24px;
+
+z-index:10;
+}
+
+.pastorKitTile{
+display:flex;
+align-items:center;
+justify-content:center;
+
+height:74px;
+
+font-family:"Cinzel", serif;
+font-size:26px;
+font-weight:600;
+
+color:#ffffff;
+background:#0C4160;
+
+text-decoration:none;
+
+border-radius:14px;
+
+box-shadow:
+0 8px 18px rgba(0,0,0,0.22);
+}
+
+/* ======================================
    MOBILE LAYOUT
 ====================================== */
 
@@ -73,4 +114,18 @@ text-shadow:
     z-index:20;
   }
 
+.pastorKitTiles{
+    top:64vw;
+    width:78vw;
+    gap:16px;
+  }
+
+  .pastorKitTile{
+    height:52px;
+
+    font-size:16px;
+
+    border-radius:12px;
+  }
+   
 }
