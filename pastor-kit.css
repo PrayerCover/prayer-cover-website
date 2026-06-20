@@ -126,14 +126,21 @@ border-radius:12px;
 
 .pastorKitPreviewText{
 
-  width:78vw;
+  width:760px;
 
-  font-size:14px;
+  margin-top:10px;
+  margin-bottom:30px;
+  margin-left:70px;
 
-  line-height:1.6;
+  font-family:Georgia, serif;
 
-  margin-top:-4px;
-  margin-bottom:10px;
+  font-size:26px;
+
+  line-height:1.55;
+
+  color:#0C4160;
+
+  text-align:left;
 }
 
 /* ======================================
