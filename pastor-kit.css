@@ -120,6 +120,10 @@ border:2px solid #0C4160;
 border-radius:12px;
 }
 
+.hidden{
+   display:none;
+}
+
 /* ======================================
    MOBILE LAYOUT
 ====================================== */
