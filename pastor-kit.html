@@ -107,6 +107,30 @@ href="index.html"
 </div>
   
 </div>
+
+<script>
+const legalPoliciesToggle =
+  document.getElementById(
+    "legalPoliciesToggle"
+  );
+
+const legalPoliciesLinks =
+  document.getElementById(
+    "legalPoliciesLinks"
+  );
+
+if(
+  legalPoliciesToggle &&
+  legalPoliciesLinks
+){
+  legalPoliciesToggle.onclick =
+    function(){
+      legalPoliciesLinks.classList.toggle(
+        "hidden"
+      );
+    };
+}
+</script>
   
 </body>
 </html>
