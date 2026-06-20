@@ -19,7 +19,7 @@
     100% 3200px;
 }
 
-.backHomeLink{
+.howTheMapWorksBackHomeLink{
 
   position:absolute;
 
@@ -36,4 +36,38 @@
   color:#FFFFFF;
 
   text-decoration:none;
+}
+
+/* ======================================
+   MOBILE LAYOUT
+====================================== */
+
+@media (max-width:700px){
+
+  .howTheMapWorksPage{
+    min-height:278vw;
+
+    background-image:
+      url("JOINPRAYERCOVER-HOW-THE-MAP-WORKS-MOBILE.png");
+
+    background-position:
+      top center;
+
+    background-repeat:
+      no-repeat;
+
+    background-size:
+      100% auto;
+  }
+
+  .howTheMapWorksBackHomeLink{
+    top:8px;
+    left:8px;
+    right:auto;
+
+    font-size:8px;
+
+    z-index:20;
+  }
+
 }
