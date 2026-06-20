@@ -147,12 +147,12 @@ border-radius:12px;
   }
 
   .pastorKitBackHomeLink{
-    top:8px;
+    top:12px;
     left:8px;
     right:auto;
 
     font-size:8px;
-    color:#0c4160;
+    color:#1f6f8b;
 
     z-index:20;
   }
