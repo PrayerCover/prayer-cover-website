@@ -1,0 +1,73 @@
+body{
+margin:0;
+padding:0;
+background:#ffffff;
+overflow-x:hidden;
+}
+
+.termsOfUsePage{
+position:relative;
+width:100vw;
+min-height:3200px;
+
+background-image:
+url("JOINPRAYERCOVER-TERMS-OF-USE.png");
+
+background-position:
+top center;
+
+background-repeat:
+no-repeat;
+
+background-size:
+100% auto;
+}
+
+.termsOfUseBackHomeLink{
+position:absolute;
+top:42px;
+right:58px;
+z-index:20;
+
+font-family:"Cinzel", serif;
+font-size:22px;
+font-weight:600;
+
+color:#ffffff;
+text-decoration:none;
+text-shadow:0 2px 4px rgba(0,0,0,0.45);
+}
+
+/* ======================================
+   MOBILE LAYOUT
+====================================== */
+
+@media (max-width:700px){
+
+  .termsOfUsePage{
+    min-height:296vw;
+
+    background-image:
+    url("JOINPRAYERCOVER-TERMS-OF-USE-MOBILE.png");
+
+    background-position:
+    top center;
+
+    background-repeat:
+    no-repeat;
+
+    background-size:
+    100% auto;
+  }
+
+  .termsOfUseBackHomeLink{
+    top:8px;
+    left:8px;
+    right:auto;
+
+    font-size:8px;
+
+    z-index:20;
+  }
+
+}
