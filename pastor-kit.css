@@ -83,6 +83,44 @@ box-shadow:
 }
 
 /* ======================================
+   LEGAL SUBMENU
+====================================== */
+
+.hidden{
+display:none;
+}
+
+.pastorKitSubLinks{
+display:flex;
+flex-direction:column;
+gap:14px;
+
+margin-top:-8px;
+margin-bottom:12px;
+}
+
+.pastorKitSubTile{
+display:flex;
+align-items:center;
+justify-content:center;
+
+height:58px;
+
+font-family:"Cinzel", serif;
+font-size:20px;
+font-weight:600;
+
+color:#0C4160;
+background:#ffffff;
+
+text-decoration:none;
+
+border:2px solid #0C4160;
+
+border-radius:12px;
+}
+
+/* ======================================
    MOBILE LAYOUT
 ====================================== */
 
@@ -127,5 +165,14 @@ box-shadow:
 
     border-radius:12px;
   }
-   
+
+.pastorKitSubLinks{
+    gap:10px;
+  }
+
+  .pastorKitSubTile{
+    height:44px;
+
+    font-size:14px;
+  }
 }
