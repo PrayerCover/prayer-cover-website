@@ -104,3 +104,37 @@ body{
 
   margin-bottom:24px;
 }
+
+/* ======================================
+   MOBILE LAYOUT
+====================================== */
+
+@media (max-width:700px){
+
+  .churchOverviewPage{
+    min-height:245vw;
+
+    background-image:
+      url("JOINPRAYERCOVER-CHURCH-OVERVIEW-MOBILE.png");
+
+    background-position:
+      top center;
+
+    background-repeat:
+      no-repeat;
+
+    background-size:
+      100% auto;
+  }
+
+  .churchOverviewBackHomeLink{
+    top:12px;
+    left:12px;
+    right:auto;
+
+    font-size:14px;
+
+    z-index:20;
+  }
+
+}
