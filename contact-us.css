@@ -1,0 +1,71 @@
+body{
+margin:0;
+padding:0;
+background:#ffffff;
+overflow-x:hidden;
+}
+
+.contactUsPage{
+position:relative;
+width:100vw;
+min-height:1800px;
+
+background-image:
+url("JOINPRAYERCOVER-CONTACT-US.png");
+
+background-position:
+top center;
+
+background-repeat:
+no-repeat;
+
+background-size:
+100% auto;
+}
+
+.contactUsBackHomeLink{
+position:absolute;
+top:28px;
+right:52px;
+z-index:20;
+
+font-family:Georgia, serif;
+font-size:24px;
+font-weight:600;
+
+color:#ffffff;
+
+text-decoration:none;
+}
+
+/* ======================================
+   MOBILE LAYOUT
+====================================== */
+
+@media (max-width:700px){
+
+  .contactUsPage{
+    min-height:167vw;
+
+    background-image:
+      url("JOINPRAYERCOVER-CONTACT-US-MOBILE.png");
+
+    background-position:
+      top center;
+
+    background-repeat:
+      no-repeat;
+
+    background-size:
+      100% auto;
+  }
+
+  .contactUsBackHomeLink{
+    top:10px;
+    right:10px;
+    left:auto;
+
+    font-size:10px;
+  }
+
+}
