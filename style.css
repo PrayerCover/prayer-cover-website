@@ -299,6 +299,20 @@ body{
   cursor:pointer;
 }
 
+.contactUsItem{
+  position:absolute;
+  top:545px;
+  right:120px;
+
+  font-family:Georgia, serif;
+  font-size:34px;
+  font-weight:400;
+  color:#1f6f8b;
+  line-height:1.25;
+  text-align:right;
+  cursor:pointer;
+}
+
 .leadershipLoginItem{
   position:absolute;
   top:660px;
@@ -355,6 +369,7 @@ body{
   .pricingItem,
   .churchSignupItem,
   .shareVisionItem,
+  .contactUsItem,
   .leadershipLoginItem{
     position:relative;
     top:auto;
@@ -447,8 +462,12 @@ body{
     order:16;
   }
 
-  .leadershipLoginItem{
+  .contactUsItem{
     order:17;
+  }
+  
+  .leadershipLoginItem{
+    order:18;
     margin-bottom:42px;
   }
 
@@ -472,6 +491,7 @@ body{
   .pricingItem,
   .churchSignupItem,
   .shareVisionItem,
+  .contactUsItem,
   .leadershipLoginItem{
     margin-bottom:16px;
 
