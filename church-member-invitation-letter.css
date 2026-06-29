@@ -1,0 +1,84 @@
+body{
+margin:0;
+padding:0;
+background:#ffffff;
+overflow-x:hidden;
+}
+
+.churchMemberInvitationPage{
+
+position:relative;
+
+width:100vw;
+
+min-height:2200px;
+
+background-image:
+url("JOINPRAYERCOVER-CHURCH-MEMBER-INVITATION-LETTER.png");
+
+background-position:
+top center;
+
+background-repeat:
+no-repeat;
+
+background-size:
+100% auto;
+}
+
+.churchMemberInvitationBackLink{
+
+position:absolute;
+
+top:28px;
+right:52px;
+
+z-index:20;
+
+font-family:Georgia, serif;
+
+font-size:22px;
+
+font-weight:600;
+
+color:#0C4160;
+
+text-decoration:none;
+}
+
+/* ======================================
+   MOBILE LAYOUT
+====================================== */
+
+@media (max-width:700px){
+
+  .churchMemberInvitationPage{
+
+    min-height:2400px;
+
+    background-image:
+      url("JOINPRAYERCOVER-CHURCH-MEMBER-INVITATION-LETTER-MOBILE.png");
+
+    background-position:
+      top center;
+
+    background-repeat:
+      no-repeat;
+
+    background-size:
+      100% auto;
+  }
+
+  .churchMemberInvitationBackLink{
+
+    top:10px;
+    right:10px;
+
+    left:auto;
+
+    font-size:10px;
+
+    color:#0C4160;
+  }
+
+}
