@@ -58,6 +58,7 @@ body{
   color:#1f6f8b;
   line-height:1.25;
   cursor:pointer;
+  text-decoration:none;
 }
 
 .acrossCitiesItem{
