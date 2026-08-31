@@ -439,5 +439,297 @@
 
   updateContactUsMapRequirements();
 
+/* ==================================================
+   WEBSITE CONTACT US — SUBMIT
+================================================== */
 
+contactUsForm.addEventListener(
+  "submit",
+  async function(event){
+
+    event.preventDefault();
+
+
+    const contactUsName =
+      document
+        .getElementById(
+          "contactUsName"
+        );
+
+    const contactUsEmail =
+      document
+        .getElementById(
+          "contactUsEmail"
+        );
+
+    const contactUsMessage =
+      document
+        .getElementById(
+          "contactUsMessage"
+        );
+
+    const contactUsSuccessMessage =
+      document
+        .getElementById(
+          "contactUsSuccessMessage"
+        );
+
+
+    const name =
+      contactUsName
+        ? contactUsName.value.trim()
+        : "";
+
+
+    const email =
+      contactUsEmail
+        ? contactUsEmail.value.trim()
+        : "";
+
+
+    const request_type =
+      contactUsType
+        ? contactUsType.value
+        : "";
+
+
+    const topic =
+      contactUsTopic
+        ? contactUsTopic.value
+        : "";
+
+
+    const supportMessage =
+      contactUsMessage
+        ? contactUsMessage.value.trim()
+        : "";
+
+
+    let problem_type = "";
+
+    let message =
+      supportMessage;
+
+
+    /* ======================================
+       MAP / STREET DETAILS
+    ======================================= */
+
+    if(
+      request_type ===
+      "map_street_problem"
+    ){
+
+      problem_type =
+        contactUsMapProblemType
+          ? contactUsMapProblemType.value
+          : "";
+
+
+      const state =
+        contactUsMapState
+          ? contactUsMapState.value.trim()
+          : "";
+
+
+      const city =
+        contactUsMapCity
+          ? contactUsMapCity.value.trim()
+          : "";
+
+
+      const street =
+        contactUsMapStreet
+          ? contactUsMapStreet.value.trim()
+          : "";
+
+
+      const countyField =
+        document.getElementById(
+          "contactUsMapCounty"
+        );
+
+
+      const nearbyAreaField =
+        document.getElementById(
+          "contactUsMapNearbyArea"
+        );
+
+
+      const county =
+        countyField
+          ? countyField.value.trim()
+          : "";
+
+
+      const nearbyArea =
+        nearbyAreaField
+          ? nearbyAreaField.value.trim()
+          : "";
+
+
+      message =
+        "MAP / STREET PROBLEM\n\n" +
+
+        "Problem Type: " +
+        problem_type +
+        "\n" +
+
+        "State: " +
+        state +
+        "\n" +
+
+        "City: " +
+        (city || "Not provided") +
+        "\n" +
+
+        "Street: " +
+        (street || "Not provided") +
+        "\n" +
+
+        "County: " +
+        (county || "Not provided") +
+        "\n" +
+
+        "Nearby ZIP / Area: " +
+        (nearbyArea || "Not provided") +
+        "\n\n" +
+
+        "User Description:\n" +
+        supportMessage;
+
+    }
+
+
+    /* ======================================
+       NON-MAP QUICK TOPIC
+    ======================================= */
+
+    if(
+      request_type !==
+        "map_street_problem" &&
+      topic
+    ){
+
+      message =
+        "TOPIC: " +
+        topic +
+        "\n\n" +
+        supportMessage;
+
+    }
+
+
+    /* ======================================
+       WRITE TO SUPPORT_REQUESTS
+    ======================================= */
+
+    const {
+      error:
+        supportInsertError
+    } =
+      await supabase
+        .from(
+          "support_requests"
+        )
+        .insert([
+          {
+            name,
+            email,
+            request_type,
+            message
+          }
+        ]);
+
+
+    if(supportInsertError){
+
+      console.error(
+        "WEBSITE CONTACT INSERT ERROR",
+        supportInsertError
+      );
+
+      alert(
+        "Something went wrong. Please try again."
+      );
+
+      return;
+
+    }
+
+
+    /* ======================================
+       SEND WEBSITE NOTIFICATION + AUTO-REPLY
+    ======================================= */
+
+    try{
+
+      const {
+        data:
+          notificationResult,
+
+        error:
+          notificationError
+      } =
+        await supabase.functions.invoke(
+          "send_website_contact_notification",
+          {
+            body:{
+              name,
+              email,
+              request_type,
+              topic,
+              problem_type,
+              message
+            }
+          }
+        );
+
+
+      if(notificationError){
+
+        console.error(
+          "WEBSITE CONTACT NOTIFICATION ERROR",
+          notificationError
+        );
+
+      }
+
+
+    }catch(notificationException){
+
+      console.error(
+        "WEBSITE CONTACT NOTIFICATION ERROR",
+        notificationException
+      );
+
+    }
+
+
+    /* ======================================
+       SUCCESS
+    ======================================= */
+
+    if(contactUsSuccessMessage){
+
+      contactUsSuccessMessage
+        .classList
+        .remove(
+          "contactUsHidden"
+        );
+
+    }
+
+
+    contactUsForm.reset();
+
+
+    updateContactUsRequestType();
+
+    updateContactUsMapRequirements();
+
+  }
+);
+
+  
 })();
