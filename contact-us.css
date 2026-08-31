@@ -81,7 +81,7 @@ body{
 
   margin:0 auto;
 
-  padding-top:365px;
+  padding-top:430px;
 
   box-sizing:border-box;
 }
@@ -428,7 +428,11 @@ body{
 
   flex-direction:column;
 
+  justify-content:center;
+
   gap:34px;
+
+  align-self:stretch;
 
   padding-left:34px;
 
