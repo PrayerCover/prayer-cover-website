@@ -44,8 +44,8 @@ body{
   .streetkeeperGearPage{
     background-image:
       linear-gradient(
-        rgba(12,65,96,0.34),
-        rgba(12,65,96,0.34)
+        rgba(12,65,96,0.28),
+        rgba(12,65,96,0.28)
       ),
       url("desktop-card-overlay.png"),
       linear-gradient(
