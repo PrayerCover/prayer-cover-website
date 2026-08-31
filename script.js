@@ -2,6 +2,13 @@
 
 (function(){
 
+  const supabase =
+    window.supabase.createClient(
+      "https://gmtkxwlikptewlfagpba.supabase.co",
+      "sb_publishable_zPq_XsTniASzK1aCzYKp5Q_2SoSCel-"
+    );
+
+
   /* ==================================================
      WEBSITE CONTACT US
      FRONT-END FORM BEHAVIOR
