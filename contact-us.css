@@ -255,7 +255,7 @@ body{
 }
 
 #contactUsForm textarea{
-  min-height:175px;
+  min-height:95px;
 
   resize:vertical;
 }
