@@ -1,42 +1,260 @@
 body{
-margin:0;
-padding:0;
-background:#ffffff;
-overflow-x:hidden;
+  margin:0;
+  padding:0;
+  background:#ffffff;
+  overflow-x:hidden;
 }
 
 .contactUsPage{
-position:relative;
-width:100vw;
-min-height:1800px;
+  position:relative;
+  width:100vw;
+  min-height:1800px;
 
-background-image:
-url("JOINPRAYERCOVER-CONTACT-US.png");
+  background-image:
+    url("JOINPRAYERCOVER-CONTACT-US.png");
 
-background-position:
-top center;
+  background-position:
+    top center;
 
-background-repeat:
-no-repeat;
+  background-repeat:
+    no-repeat;
 
-background-size:
-100% auto;
+  background-size:
+    100% auto;
 }
+
+
+/* ======================================
+   BACK TO HOME
+====================================== */
 
 .contactUsBackHomeLink{
-position:absolute;
-top:28px;
-right:52px;
-z-index:20;
+  position:absolute;
+  top:28px;
+  right:52px;
+  z-index:20;
 
-font-family:Georgia, serif;
-font-size:24px;
-font-weight:600;
+  font-family:Georgia, serif;
+  font-size:24px;
+  font-weight:600;
 
-color:#ffffff;
+  color:#ffffff;
 
-text-decoration:none;
+  text-decoration:none;
 }
+
+
+/* ======================================
+   WEBSITE CONTACT US FORM
+====================================== */
+
+.contactUsFormWrap{
+  position:absolute;
+
+  top:300px;
+  left:50%;
+
+  transform:
+    translateX(-50%);
+
+  width:
+    min(720px, calc(100vw - 120px));
+
+  padding:
+    34px 38px 40px 38px;
+
+  box-sizing:border-box;
+
+  background:
+    rgba(255,255,255,0.92);
+
+  border-radius:22px;
+
+  box-shadow:
+    0 8px 28px
+    rgba(0,0,0,0.16);
+
+  z-index:10;
+}
+
+#contactUsForm{
+  display:flex;
+  flex-direction:column;
+}
+
+#contactUsForm label{
+  margin-top:18px;
+  margin-bottom:7px;
+
+  font-family:Georgia, serif;
+  font-size:20px;
+  font-weight:700;
+
+  color:#124A58;
+}
+
+#contactUsForm label:first-child{
+  margin-top:0;
+}
+
+#contactUsForm input,
+#contactUsForm select,
+#contactUsForm textarea{
+  width:100%;
+
+  box-sizing:border-box;
+
+  padding:13px 14px;
+
+  font-family:Georgia, serif;
+  font-size:18px;
+
+  color:#111111;
+  background:#ffffff;
+
+  border:
+    1px solid #9BBEC8;
+
+  border-radius:10px;
+
+  outline:none;
+}
+
+#contactUsForm textarea{
+  resize:vertical;
+  min-height:150px;
+}
+
+#contactUsForm input:focus,
+#contactUsForm select:focus,
+#contactUsForm textarea:focus{
+  border-color:#1f6f8b;
+
+  box-shadow:
+    0 0 0 2px
+    rgba(31,111,139,0.14);
+}
+
+
+/* ======================================
+   MAP / STREET PROBLEM
+====================================== */
+
+#contactUsMapStreetFields{
+  margin-top:20px;
+
+  padding:
+    8px 20px 22px 20px;
+
+  background:
+    rgba(245,252,254,0.94);
+
+  border:
+    1px solid #D5E7EC;
+
+  border-radius:14px;
+}
+
+.contactUsMapCitySearchWrap{
+  position:relative;
+}
+
+.contactUsMapCityResults{
+  position:absolute;
+
+  top:100%;
+  left:0;
+  right:0;
+
+  max-height:260px;
+  overflow-y:auto;
+
+  background:#ffffff;
+
+  border:
+    1px solid #9BBEC8;
+
+  border-top:none;
+
+  border-radius:
+    0 0 10px 10px;
+
+  box-shadow:
+    0 6px 18px
+    rgba(0,0,0,0.14);
+
+  z-index:30;
+}
+
+.contactUsMapCityResult{
+  padding:11px 14px;
+
+  font-family:Georgia, serif;
+  font-size:17px;
+
+  color:#111111;
+
+  cursor:pointer;
+}
+
+.contactUsMapCityResult:hover{
+  background:#F5FCFE;
+}
+
+
+/* ======================================
+   SUBMIT / SUCCESS
+====================================== */
+
+.contactUsSubmitBtn{
+  margin-top:28px;
+
+  align-self:center;
+
+  min-width:220px;
+
+  padding:
+    13px 30px;
+
+  border:none;
+  border-radius:12px;
+
+  background:#1f6f8b;
+  color:#ffffff;
+
+  font-family:Georgia, serif;
+  font-size:20px;
+  font-weight:700;
+
+  cursor:pointer;
+}
+
+.contactUsSubmitBtn:hover{
+  opacity:0.92;
+}
+
+.contactUsSuccess{
+  margin-top:22px;
+
+  padding:14px 16px;
+
+  text-align:center;
+
+  font-family:Georgia, serif;
+  font-size:18px;
+  font-weight:700;
+
+  color:#124A58;
+
+  background:#F5FCFE;
+
+  border-radius:10px;
+}
+
+.contactUsHidden{
+  display:none !important;
+}
+
 
 /* ======================================
    MOBILE LAYOUT
@@ -45,7 +263,7 @@ text-decoration:none;
 @media (max-width:700px){
 
   .contactUsPage{
-    min-height:167vw;
+    min-height:2300px;
 
     background-image:
       url("JOINPRAYERCOVER-CONTACT-US-MOBILE.png");
@@ -66,6 +284,76 @@ text-decoration:none;
     left:auto;
 
     font-size:10px;
+  }
+
+  .contactUsFormWrap{
+    top:165px;
+    left:50%;
+
+    transform:
+      translateX(-50%);
+
+    width:
+      calc(100vw - 28px);
+
+    padding:
+      24px 18px 30px 18px;
+
+    border-radius:16px;
+  }
+
+  #contactUsForm label{
+    margin-top:15px;
+    margin-bottom:6px;
+
+    font-size:16px;
+  }
+
+  #contactUsForm input,
+  #contactUsForm select,
+  #contactUsForm textarea{
+    padding:11px 12px;
+
+    font-size:16px;
+
+    border-radius:8px;
+  }
+
+  #contactUsForm textarea{
+    min-height:135px;
+  }
+
+  #contactUsMapStreetFields{
+    margin-top:16px;
+
+    padding:
+      5px 12px 18px 12px;
+
+    border-radius:12px;
+  }
+
+  .contactUsMapCityResult{
+    padding:10px 12px;
+
+    font-size:15px;
+  }
+
+  .contactUsSubmitBtn{
+    width:100%;
+
+    min-width:0;
+
+    margin-top:24px;
+
+    padding:12px 18px;
+
+    font-size:18px;
+  }
+
+  .contactUsSuccess{
+    margin-top:18px;
+
+    font-size:15px;
   }
 
 }
