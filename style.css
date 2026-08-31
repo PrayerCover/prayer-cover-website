@@ -132,6 +132,15 @@ body{
   text-decoration:none;
 }
 
+a.streetkeeperGearItem,
+a.streetkeeperGearItem:link,
+a.streetkeeperGearItem:visited,
+a.streetkeeperGearItem:hover,
+a.streetkeeperGearItem:active{
+  text-decoration:none !important;
+  color:#1f6f8b;
+}
+
 .streetkeeperLoginItem{
   position:absolute;
   top:660px;
