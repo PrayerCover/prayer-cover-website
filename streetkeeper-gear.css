@@ -35,6 +35,29 @@ body{
 
 
 /* ======================================
+   ESTABLISHED PRAYER COVER
+   DESKTOP BACKGROUND TREATMENT
+====================================== */
+
+@media (min-width:900px) and (min-aspect-ratio:4/3){
+
+  .streetkeeperGearPage{
+    background-image:
+      linear-gradient(
+        rgba(12,65,96,0.42),
+        rgba(12,65,96,0.42)
+      ),
+      url("desktop-card-overlay.png");
+
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+  }
+
+}
+
+
+/* ======================================
    BACK TO HOME
 ====================================== */
 
@@ -99,19 +122,25 @@ body{
 
   box-sizing:border-box;
 
-  background-image:
-    url("desktop-card-overlay.png");
+  background:
+    rgba(255,255,255,0.24);
 
-  background-position:
-    center;
+  border:
+    1px solid
+    rgba(255,255,255,0.38);
 
-  background-repeat:
-    no-repeat;
+  border-radius:26px;
 
-  background-size:
-    100% 100%;
+  box-shadow:
+    0 8px 24px
+    rgba(0,0,0,0.10);
+
+  backdrop-filter:
+    blur(2px);
+
+  -webkit-backdrop-filter:
+    blur(2px);
 }
-
 
 /* ======================================
    CARD TEXT
