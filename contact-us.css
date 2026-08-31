@@ -558,7 +558,7 @@ body{
   ====================================== */
 
  .contactUsPage{
-  min-height:222.22vw;
+  min-height:333.33vw;
 
   background-image:
     url("JOINPRAYERCOVER-CONTACT-US-MOBILE.png");
@@ -572,7 +572,6 @@ body{
   background-size:
     100% auto;
 }
-
   /* ======================================
      MOBILE BACK LINK
   ====================================== */
