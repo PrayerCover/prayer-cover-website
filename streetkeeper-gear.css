@@ -26,6 +26,7 @@ body{
 
 .streetkeeperGearPage{
   position:relative;
+  transform:translateY(-35px);
 
   width:100vw;
   min-height:100vh;
