@@ -557,22 +557,21 @@ body{
      MOBILE BACKGROUND
   ====================================== */
 
-  .contactUsPage{
-    min-height:2500px;
+ .contactUsPage{
+  min-height:222.22vw;
 
-    background-image:
-      url("JOINPRAYERCOVER-CONTACT-US-MOBILE.png");
+  background-image:
+    url("JOINPRAYERCOVER-CONTACT-US-MOBILE.png");
 
-    background-position:
-      top center;
+  background-position:
+    top center;
 
-    background-repeat:
-      no-repeat;
+  background-repeat:
+    no-repeat;
 
-    background-size:
-      100% auto;
-  }
-
+  background-size:
+    100% auto;
+}
 
   /* ======================================
      MOBILE BACK LINK
