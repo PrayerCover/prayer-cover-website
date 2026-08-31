@@ -47,11 +47,28 @@ body{
         rgba(12,65,96,0.42),
         rgba(12,65,96,0.42)
       ),
-      url("desktop-card-overlay.png");
+      url("desktop-card-overlay.png"),
+      linear-gradient(
+        to bottom,
+        #0C3045 0%,
+        #0C4160 48%,
+        #1F6F8B 100%
+      );
 
-    background-size:cover;
-    background-position:center center;
-    background-repeat:no-repeat;
+    background-size:
+      cover,
+      cover,
+      cover;
+
+    background-position:
+      center center,
+      center center,
+      center center;
+
+    background-repeat:
+      no-repeat,
+      no-repeat,
+      no-repeat;
   }
 
 }
@@ -123,25 +140,22 @@ body{
 
   box-sizing:border-box;
 
-  background:
-    rgba(255,255,255,0.14);
+background:
+  rgba(255,255,255,0.24);
 
-  border:
-    1px solid
-    rgba(255,255,255,0.30);
+border:
+  1px solid
+  rgba(255,255,255,0.38);
 
-  border-radius:26px;
+box-shadow:
+  0 8px 24px
+  rgba(0,0,0,0.10);
 
-  box-shadow:
-    0 8px 24px
-    rgba(0,0,0,0.08);
+backdrop-filter:
+  blur(2px);
 
-  backdrop-filter:
-    blur(1px);
-
-  -webkit-backdrop-filter:
-    blur(1px);
-}
+-webkit-backdrop-filter:
+  blur(2px);
 
 /* ======================================
    CARD TEXT
