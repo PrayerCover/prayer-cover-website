@@ -112,34 +112,35 @@ body{
   justify-content:center;
 
   width:
-    min(1500px, 92vw);
+    calc(100% - 100px);
 
-  min-height:
-    min(820px, 82vh);
+  max-width:1000px;
+
+  min-height:500px;
 
   padding:
-    90px 120px;
+    60px 70px;
 
   box-sizing:border-box;
 
   background:
-    rgba(255,255,255,0.24);
+    rgba(255,255,255,0.14);
 
   border:
     1px solid
-    rgba(255,255,255,0.38);
+    rgba(255,255,255,0.30);
 
   border-radius:26px;
 
   box-shadow:
     0 8px 24px
-    rgba(0,0,0,0.10);
+    rgba(0,0,0,0.08);
 
   backdrop-filter:
-    blur(2px);
+    blur(1px);
 
   -webkit-backdrop-filter:
-    blur(2px);
+    blur(1px);
 }
 
 /* ======================================
