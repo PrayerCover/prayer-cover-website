@@ -1,14 +1,33 @@
+/* ======================================
+   CONTACT US PAGE
+====================================== */
+
+html,
 body{
   margin:0;
   padding:0;
+
+  width:100%;
+
   background:#ffffff;
+
   overflow-x:hidden;
 }
 
+body{
+  font-family:Georgia, serif;
+}
+
+
+/* ======================================
+   PAGE BACKGROUND — DESKTOP
+====================================== */
+
 .contactUsPage{
   position:relative;
-  width:100vw;
-  min-height:1800px;
+
+  width:100%;
+  min-height:1900px;
 
   background-image:
     url("JOINPRAYERCOVER-CONTACT-US.png");
@@ -30,9 +49,11 @@ body{
 
 .contactUsBackHomeLink{
   position:absolute;
+
   top:28px;
   right:52px;
-  z-index:20;
+
+  z-index:40;
 
   font-family:Georgia, serif;
   font-size:24px;
@@ -41,46 +62,125 @@ body{
   color:#ffffff;
 
   text-decoration:none;
+
+  text-shadow:
+    0 2px 4px
+    rgba(0,0,0,0.35);
 }
 
 
 /* ======================================
-   WEBSITE CONTACT US FORM
+   MAIN CONTENT
 ====================================== */
 
-.contactUsFormWrap{
-  position:absolute;
-
-  top:300px;
-  left:50%;
-
-  transform:
-    translateX(-50%);
+.contactUsContent{
+  position:relative;
 
   width:
-    min(720px, calc(100vw - 120px));
+    min(1180px, calc(100vw - 100px));
+
+  margin:0 auto;
+
+  padding-top:365px;
+
+  box-sizing:border-box;
+}
+
+
+/* ======================================
+   INTRO
+====================================== */
+
+.contactUsIntro{
+  text-align:center;
+
+  margin-bottom:30px;
+
+  color:#ffffff;
+
+  text-shadow:
+    0 2px 5px
+    rgba(0,0,0,0.32);
+}
+
+.contactUsIntro h1{
+  margin:0 0 6px 0;
+
+  font-family:Georgia, serif;
+  font-size:38px;
+  line-height:1.15;
+  font-weight:700;
+}
+
+.contactUsIntro p{
+  margin:0;
+
+  font-family:Georgia, serif;
+  font-size:25px;
+  line-height:1.35;
+}
+
+
+/* ======================================
+   MAIN GLASS CARD
+====================================== */
+
+.contactUsMainCard{
+  display:grid;
+
+  grid-template-columns:
+    minmax(0, 1fr) 300px;
+
+  gap:38px;
+
+  align-items:start;
 
   padding:
-    34px 38px 40px 38px;
+    38px 42px 42px 42px;
 
   box-sizing:border-box;
 
   background:
-    rgba(255,255,255,0.92);
+    rgba(255,255,255,0.22);
 
-  border-radius:22px;
+  border:
+    1px solid
+    rgba(255,255,255,0.50);
+
+  border-radius:26px;
 
   box-shadow:
-    0 8px 28px
-    rgba(0,0,0,0.16);
+    0 14px 38px
+    rgba(0,0,0,0.18);
 
-  z-index:10;
+  backdrop-filter:
+    blur(9px);
+
+  -webkit-backdrop-filter:
+    blur(9px);
+}
+
+
+/* ======================================
+   FORM COLUMN
+====================================== */
+
+.contactUsFormColumn{
+  min-width:0;
 }
 
 #contactUsForm{
   display:flex;
+
   flex-direction:column;
+
+  width:100%;
 }
+
+
+/* ======================================
+   LABELS
+====================================== */
 
 #contactUsForm label{
   margin-top:18px;
@@ -88,14 +188,24 @@ body{
 
   font-family:Georgia, serif;
   font-size:20px;
+  line-height:1.25;
   font-weight:700;
 
-  color:#124A58;
+  color:#ffffff;
+
+  text-shadow:
+    0 1px 3px
+    rgba(0,0,0,0.34);
 }
 
 #contactUsForm label:first-child{
   margin-top:0;
 }
+
+
+/* ======================================
+   INPUTS / SELECTS / MESSAGE
+====================================== */
 
 #contactUsForm input,
 #contactUsForm select,
@@ -104,56 +214,88 @@ body{
 
   box-sizing:border-box;
 
-  padding:13px 14px;
+  padding:
+    13px 15px;
 
   font-family:Georgia, serif;
   font-size:18px;
+  line-height:1.35;
 
-  color:#111111;
-  background:#ffffff;
+  color:#123E4B;
+
+  background:
+    rgba(255,255,255,0.92);
 
   border:
-    1px solid #9BBEC8;
+    1px solid
+    rgba(255,255,255,0.95);
 
   border-radius:10px;
+
+  box-shadow:
+    inset 0 1px 2px
+    rgba(0,0,0,0.08);
 
   outline:none;
 }
 
-#contactUsForm textarea{
-  resize:vertical;
-  min-height:150px;
+#contactUsForm input::placeholder,
+#contactUsForm textarea::placeholder{
+  color:#6F7C80;
 }
 
 #contactUsForm input:focus,
 #contactUsForm select:focus,
 #contactUsForm textarea:focus{
-  border-color:#1f6f8b;
+  border-color:#BCEBF3;
 
   box-shadow:
-    0 0 0 2px
-    rgba(31,111,139,0.14);
+    0 0 0 3px
+    rgba(188,235,243,0.25);
+}
+
+#contactUsForm textarea{
+  min-height:175px;
+
+  resize:vertical;
 }
 
 
 /* ======================================
-   MAP / STREET PROBLEM
+   QUICK TOPIC
 ====================================== */
 
-#contactUsMapStreetFields{
-  margin-top:20px;
+#contactUsTopicWrap{
+  margin-top:4px;
+}
+
+
+/* ======================================
+   MAP / STREET DETAILS
+====================================== */
+
+.contactUsMapStreetFields{
+  margin-top:22px;
 
   padding:
-    8px 20px 22px 20px;
+    8px 20px 24px 20px;
+
+  box-sizing:border-box;
 
   background:
-    rgba(245,252,254,0.94);
+    rgba(255,255,255,0.13);
 
   border:
-    1px solid #D5E7EC;
+    1px solid
+    rgba(255,255,255,0.40);
 
-  border-radius:14px;
+  border-radius:16px;
 }
+
+
+/* ======================================
+   CITY SEARCH
+====================================== */
 
 .contactUsMapCitySearchWrap{
   position:relative;
@@ -162,17 +304,18 @@ body{
 .contactUsMapCityResults{
   position:absolute;
 
-  top:100%;
+  top:calc(100% - 1px);
   left:0;
   right:0;
 
   max-height:260px;
+
   overflow-y:auto;
 
   background:#ffffff;
 
   border:
-    1px solid #9BBEC8;
+    1px solid #9CBFC8;
 
   border-top:none;
 
@@ -180,90 +323,239 @@ body{
     0 0 10px 10px;
 
   box-shadow:
-    0 6px 18px
-    rgba(0,0,0,0.14);
+    0 8px 20px
+    rgba(0,0,0,0.16);
 
-  z-index:30;
+  z-index:60;
 }
 
 .contactUsMapCityResult{
-  padding:11px 14px;
+  padding:
+    11px 14px;
 
   font-family:Georgia, serif;
   font-size:17px;
 
-  color:#111111;
+  color:#123E4B;
 
   cursor:pointer;
 }
 
 .contactUsMapCityResult:hover{
-  background:#F5FCFE;
+  background:#EAF7FA;
 }
 
 
 /* ======================================
-   SUBMIT / SUCCESS
+   SUBMIT
 ====================================== */
 
 .contactUsSubmitBtn{
-  margin-top:28px;
-
   align-self:center;
 
-  min-width:220px;
+  width:
+    min(320px, 72%);
+
+  margin-top:30px;
 
   padding:
-    13px 30px;
+    14px 24px;
 
-  border:none;
-  border-radius:12px;
+  border:
+    1px solid
+    rgba(255,255,255,0.70);
 
-  background:#1f6f8b;
+  border-radius:11px;
+
+  background:#086078;
+
   color:#ffffff;
 
   font-family:Georgia, serif;
-  font-size:20px;
+  font-size:22px;
   font-weight:700;
+
+  text-transform:uppercase;
+
+  box-shadow:
+    0 4px 12px
+    rgba(0,0,0,0.18);
 
   cursor:pointer;
 }
 
 .contactUsSubmitBtn:hover{
-  opacity:0.92;
+  background:#07546A;
 }
+
+
+/* ======================================
+   SUCCESS MESSAGE
+====================================== */
 
 .contactUsSuccess{
   margin-top:22px;
 
-  padding:14px 16px;
+  padding:
+    15px 18px;
 
   text-align:center;
 
   font-family:Georgia, serif;
   font-size:18px;
+  line-height:1.4;
   font-weight:700;
 
-  color:#124A58;
+  color:#ffffff;
 
-  background:#F5FCFE;
+  background:
+    rgba(8,96,120,0.72);
 
-  border-radius:10px;
+  border:
+    1px solid
+    rgba(255,255,255,0.40);
+
+  border-radius:11px;
 }
+
+
+/* ======================================
+   PROMISE COLUMN
+====================================== */
+
+.contactUsPromiseColumn{
+  display:flex;
+
+  flex-direction:column;
+
+  gap:34px;
+
+  padding-left:34px;
+
+  border-left:
+    1px solid
+    rgba(255,255,255,0.35);
+}
+
+.contactUsPromiseItem{
+  display:flex;
+
+  align-items:flex-start;
+
+  gap:16px;
+}
+
+.contactUsPromiseIcon{
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+  flex:0 0 66px;
+
+  width:66px;
+  height:66px;
+
+  border-radius:50%;
+
+  background:
+    rgba(0,86,110,0.84);
+
+  border:
+    1px solid
+    rgba(255,255,255,0.50);
+
+  color:#ffffff;
+
+  font-size:34px;
+  line-height:1;
+}
+
+.contactUsPromiseText{
+  padding-top:4px;
+
+  color:#ffffff;
+
+  text-shadow:
+    0 1px 3px
+    rgba(0,0,0,0.30);
+}
+
+.contactUsPromiseText strong{
+  display:block;
+
+  margin-bottom:5px;
+
+  font-size:21px;
+  line-height:1.2;
+}
+
+.contactUsPromiseText span{
+  display:block;
+
+  font-size:18px;
+  line-height:1.42;
+}
+
+
+/* ======================================
+   FOOTER
+====================================== */
+
+.contactUsFooter{
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  margin-top:42px;
+
+  padding-bottom:80px;
+
+  color:#ffffff;
+
+  text-align:center;
+
+  text-shadow:
+    0 2px 5px
+    rgba(0,0,0,0.32);
+}
+
+.contactUsFooter strong{
+  font-size:34px;
+  line-height:1.2;
+}
+
+.contactUsFooter span{
+  margin-top:6px;
+
+  font-size:19px;
+}
+
+
+/* ======================================
+   HIDDEN
+====================================== */
 
 .contactUsHidden{
   display:none !important;
 }
 
 
-/* ======================================
+/* ============================================================
    MOBILE LAYOUT
-====================================== */
+============================================================ */
 
 @media (max-width:700px){
 
+
+  /* ======================================
+     MOBILE BACKGROUND
+  ====================================== */
+
   .contactUsPage{
-    min-height:2300px;
+    min-height:2500px;
 
     background-image:
       url("JOINPRAYERCOVER-CONTACT-US-MOBILE.png");
@@ -278,6 +570,11 @@ body{
       100% auto;
   }
 
+
+  /* ======================================
+     MOBILE BACK LINK
+  ====================================== */
+
   .contactUsBackHomeLink{
     top:10px;
     right:10px;
@@ -286,21 +583,72 @@ body{
     font-size:10px;
   }
 
-  .contactUsFormWrap{
-    top:165px;
-    left:50%;
 
-    transform:
-      translateX(-50%);
+  /* ======================================
+     MOBILE CONTENT
+  ====================================== */
 
+  .contactUsContent{
     width:
-      calc(100vw - 28px);
+      calc(100vw - 24px);
+
+    padding-top:190px;
+  }
+
+
+  /* ======================================
+     MOBILE INTRO
+  ====================================== */
+
+  .contactUsIntro{
+    margin-bottom:18px;
+  }
+
+  .contactUsIntro h1{
+    margin-bottom:4px;
+
+    font-size:24px;
+  }
+
+  .contactUsIntro p{
+    padding:
+      0 12px;
+
+    font-size:16px;
+    line-height:1.35;
+  }
+
+
+  /* ======================================
+     MOBILE GLASS CARD
+  ====================================== */
+
+  .contactUsMainCard{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:26px;
 
     padding:
-      24px 18px 30px 18px;
+      22px 16px 24px 16px;
 
-    border-radius:16px;
+    border-radius:18px;
+
+    background:
+      rgba(255,255,255,0.20);
+
+    backdrop-filter:
+      blur(8px);
+
+    -webkit-backdrop-filter:
+      blur(8px);
   }
+
+
+  /* ======================================
+     MOBILE LABELS
+  ====================================== */
 
   #contactUsForm label{
     margin-top:15px;
@@ -309,10 +657,16 @@ body{
     font-size:16px;
   }
 
+
+  /* ======================================
+     MOBILE FIELDS
+  ====================================== */
+
   #contactUsForm input,
   #contactUsForm select,
   #contactUsForm textarea{
-    padding:11px 12px;
+    padding:
+      11px 12px;
 
     font-size:16px;
 
@@ -320,39 +674,134 @@ body{
   }
 
   #contactUsForm textarea{
-    min-height:135px;
+    min-height:150px;
   }
 
-  #contactUsMapStreetFields{
-    margin-top:16px;
+
+  /* ======================================
+     MOBILE MAP DETAILS
+  ====================================== */
+
+  .contactUsMapStreetFields{
+    margin-top:18px;
 
     padding:
-      5px 12px 18px 12px;
+      5px 11px 18px 11px;
 
     border-radius:12px;
   }
 
   .contactUsMapCityResult{
-    padding:10px 12px;
+    padding:
+      10px 11px;
 
     font-size:15px;
   }
 
+
+  /* ======================================
+     MOBILE SUBMIT
+  ====================================== */
+
   .contactUsSubmitBtn{
     width:100%;
 
-    min-width:0;
-
     margin-top:24px;
 
-    padding:12px 18px;
+    padding:
+      12px 18px;
 
     font-size:18px;
   }
 
+
+  /* ======================================
+     MOBILE SUCCESS
+  ====================================== */
+
   .contactUsSuccess{
     margin-top:18px;
 
+    font-size:15px;
+  }
+
+
+  /* ======================================
+     MOBILE PROMISE AREA
+  ====================================== */
+
+  .contactUsPromiseColumn{
+    width:100%;
+
+    box-sizing:border-box;
+
+    gap:0;
+
+    padding:
+      4px 12px 4px 12px;
+
+    border-left:none;
+
+    border-top:
+      1px solid
+      rgba(255,255,255,0.35);
+  }
+
+  .contactUsPromiseItem{
+    gap:14px;
+
+    padding:
+      18px 0;
+
+    border-bottom:
+      1px solid
+      rgba(255,255,255,0.25);
+  }
+
+  .contactUsPromiseItem:last-child{
+    border-bottom:none;
+  }
+
+  .contactUsPromiseIcon{
+    flex:0 0 52px;
+
+    width:52px;
+    height:52px;
+
+    font-size:27px;
+  }
+
+  .contactUsPromiseText{
+    padding-top:1px;
+  }
+
+  .contactUsPromiseText strong{
+    margin-bottom:3px;
+
+    font-size:17px;
+  }
+
+  .contactUsPromiseText span{
+    font-size:15px;
+    line-height:1.4;
+  }
+
+
+  /* ======================================
+     MOBILE FOOTER
+  ====================================== */
+
+  .contactUsFooter{
+    margin-top:28px;
+
+    padding-bottom:50px;
+  }
+
+  .contactUsFooter strong{
+    font-size:27px;
+  }
+
+  .contactUsFooter span{
     font-size:15px;
   }
 
