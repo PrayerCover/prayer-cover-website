@@ -1,0 +1,424 @@
+/* ======================================
+   BECOME A STREETKEEPER
+   WEBSITE PAGE
+====================================== */
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+
+html,
+body{
+  width:100%;
+  min-height:100%;
+}
+
+
+body{
+  overflow-x:hidden;
+  font-family:Georgia, serif;
+  background:#0b3945;
+}
+
+
+/* ======================================
+   PAGE ENVIRONMENT
+====================================== */
+
+.becomeStreetkeeperPage{
+  position:relative;
+  width:100%;
+  min-height:100vh;
+
+  background:
+    linear-gradient(
+      180deg,
+      #092f3a 0%,
+      #0d4c5c 42%,
+      #176f82 100%
+    );
+
+  padding:42px 28px 70px;
+}
+
+
+/* ======================================
+   BACK TO HOME
+====================================== */
+
+.becomeStreetkeeperBackHomeLink{
+  position:relative;
+  z-index:2;
+
+  display:inline-block;
+
+  margin-left:24px;
+  margin-bottom:34px;
+
+  font-family:Georgia, serif;
+  font-size:20px;
+  font-weight:400;
+
+  color:#ffffff;
+
+  text-decoration:none;
+}
+
+
+.becomeStreetkeeperBackHomeLink:link,
+.becomeStreetkeeperBackHomeLink:visited,
+.becomeStreetkeeperBackHomeLink:hover,
+.becomeStreetkeeperBackHomeLink:active{
+  color:#ffffff;
+  text-decoration:none;
+}
+
+
+/* ======================================
+   MAIN CONTENT
+====================================== */
+
+.becomeStreetkeeperContent{
+  width:100%;
+  max-width:1120px;
+
+  margin:0 auto;
+}
+
+
+/* ======================================
+   PAGE HEADER
+====================================== */
+
+.becomeStreetkeeperHeader{
+  width:100%;
+
+  margin-bottom:42px;
+
+  text-align:center;
+}
+
+
+.becomeStreetkeeperTitle{
+  font-family:"Cinzel", serif;
+
+  font-size:52px;
+  line-height:1.14;
+
+  font-weight:600;
+
+  color:#ffffff;
+
+  text-align:center;
+
+  text-shadow:
+    0 2px 6px rgba(0,0,0,0.28);
+}
+
+
+/* ======================================
+   OPTION CARDS
+====================================== */
+
+.becomeStreetkeeperOptionCard{
+  width:100%;
+
+  margin-bottom:34px;
+
+  padding:34px 42px 38px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.92
+    );
+
+  border-radius:22px;
+
+  box-shadow:
+    0 10px 28px rgba(0,0,0,0.18);
+}
+
+
+/* ======================================
+   OPTION HEADINGS
+====================================== */
+
+.becomeStreetkeeperOptionHeading{
+  margin-bottom:10px;
+
+  font-family:"Cinzel", serif;
+
+  font-size:28px;
+  line-height:1.2;
+
+  font-weight:700;
+
+  color:#1f6f8b;
+
+  text-align:center;
+}
+
+
+.becomeStreetkeeperOptionTitle{
+  margin-bottom:22px;
+
+  font-family:Georgia, serif;
+
+  font-size:32px;
+  line-height:1.2;
+
+  font-weight:700;
+
+  color:#173f4b;
+
+  text-align:center;
+}
+
+
+/* ======================================
+   OPTION INTRO
+====================================== */
+
+.becomeStreetkeeperOptionIntro{
+  max-width:850px;
+
+  margin:0 auto 24px;
+
+  font-size:22px;
+  line-height:1.5;
+
+  color:#243c43;
+
+  text-align:center;
+}
+
+
+/* ======================================
+   BENEFITS
+====================================== */
+
+.becomeStreetkeeperBenefits{
+  width:100%;
+
+  padding-left:30px;
+
+  font-size:21px;
+  line-height:1.52;
+
+  color:#243c43;
+}
+
+
+.becomeStreetkeeperBenefits li{
+  margin-bottom:18px;
+}
+
+
+.becomeStreetkeeperBenefits li:last-child{
+  margin-bottom:0;
+}
+
+
+/* ======================================
+   SIGN UP AREA
+====================================== */
+
+.becomeStreetkeeperSignup{
+  width:100%;
+
+  padding-top:12px;
+
+  text-align:center;
+}
+
+
+/* ======================================
+   SIGN UP BUTTON
+   VISUAL ONLY — NOT WIRED
+====================================== */
+
+.becomeStreetkeeperSignupButton{
+  display:inline-block;
+
+  min-width:280px;
+
+  padding:16px 34px;
+
+  border:2px solid rgba(255,255,255,0.9);
+
+  border-radius:14px;
+
+  background:#ffffff;
+
+  font-family:Georgia, serif;
+
+  font-size:27px;
+  line-height:1.2;
+
+  font-weight:700;
+
+  color:#1f6f8b;
+
+  cursor:default;
+
+  box-shadow:
+    0 6px 18px rgba(0,0,0,0.20);
+}
+
+
+/* ======================================
+   SIGN UP PRICE
+====================================== */
+
+.becomeStreetkeeperSignupPrice{
+  margin-top:22px;
+
+  font-size:23px;
+  line-height:1.35;
+
+  font-weight:700;
+
+  color:#ffffff;
+}
+
+
+.becomeStreetkeeperSalesTax{
+  margin-top:7px;
+
+  font-size:18px;
+  line-height:1.35;
+
+  color:#ffffff;
+}
+
+
+/* ======================================
+   MOBILE LAYOUT
+====================================== */
+
+@media (max-width:700px){
+
+  .becomeStreetkeeperPage{
+    min-height:100vh;
+
+    padding:
+      22px
+      16px
+      48px;
+  }
+
+
+  .becomeStreetkeeperBackHomeLink{
+    margin-left:2px;
+    margin-bottom:28px;
+
+    font-size:17px;
+  }
+
+
+  .becomeStreetkeeperContent{
+    max-width:100%;
+  }
+
+
+  .becomeStreetkeeperHeader{
+    margin-bottom:30px;
+  }
+
+
+  .becomeStreetkeeperTitle{
+    font-size:34px;
+    line-height:1.16;
+  }
+
+
+  .becomeStreetkeeperOptionCard{
+    margin-bottom:24px;
+
+    padding:
+      26px
+      22px
+      28px;
+
+    border-radius:18px;
+  }
+
+
+  .becomeStreetkeeperOptionHeading{
+    margin-bottom:8px;
+
+    font-size:22px;
+    line-height:1.22;
+  }
+
+
+  .becomeStreetkeeperOptionTitle{
+    margin-bottom:20px;
+
+    font-size:27px;
+    line-height:1.2;
+  }
+
+
+  .becomeStreetkeeperOptionIntro{
+    margin-bottom:22px;
+
+    font-size:19px;
+    line-height:1.48;
+  }
+
+
+  .becomeStreetkeeperBenefits{
+    padding-left:24px;
+
+    font-size:18px;
+    line-height:1.5;
+  }
+
+
+  .becomeStreetkeeperBenefits li{
+    margin-bottom:17px;
+  }
+
+
+  .becomeStreetkeeperSignup{
+    padding-top:8px;
+  }
+
+
+  .becomeStreetkeeperSignupButton{
+    width:100%;
+    min-width:0;
+
+    max-width:330px;
+
+    padding:
+      15px
+      22px;
+
+    font-size:24px;
+
+    border-radius:13px;
+  }
+
+
+  .becomeStreetkeeperSignupPrice{
+    margin-top:20px;
+
+    font-size:20px;
+  }
+
+
+  .becomeStreetkeeperSalesTax{
+    margin-top:6px;
+
+    font-size:16px;
+  }
+
+}
